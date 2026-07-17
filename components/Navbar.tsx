@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -60,15 +60,9 @@ export default function Navbar() {
         scrolled
           ? "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[var(--surface)]/90 backdrop-blur-xl border-b border-[var(--border)] shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
           : "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent"
-      }
-    >
+      }>
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-[var(--foreground)] font-bold text-lg tracking-tight hover:text-[var(--primary)] transition-colors duration-200"
-        >
-          {t("nav.brand")}
-        </Link>
+        <Link href="/" className="text-[var(--foreground)] font-bold text-lg tracking-tight hover:text-[var(--primary)] transition-colors duration-200">Asad Rana</Link>
 
         <ul className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => {
@@ -85,14 +79,9 @@ export default function Navbar() {
                     isActive
                       ? "relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-[var(--primary)]"
                       : "relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-[var(--muted)] hover:text-[var(--foreground)]"
-                  }
-                >
+                  }>
                   {isActive && (
-                    <motion.span
-                      layoutId="nav-active"
-                      className="absolute inset-0 bg-[var(--primary)]/10 rounded-lg"
-                      transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
-                    />
+                    <motion.span layoutId="nav-active" className="absolute inset-0 bg-[var(--primary)]/10 rounded-lg" transition={{ type: "spring", bounce: 0.2, duration: 0.4 }} />
                   )}
                   <span className="relative z-10">
                     {getNavLabel(link.label, t)}
@@ -103,33 +92,19 @@ export default function Navbar() {
           })}
         </ul>
 
-        <Link
-          href="/contact"
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold hover:bg-[var(--primary)]/90 transition-colors duration-200 shadow-[0_0_16px_rgba(168,85,247,0.3)]"
-        >
+        <Link href="/contact" className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold hover:bg-[var(--primary)]/90 transition-colors duration-200 shadow-[0_0_16px_rgba(168,85,247,0.3)]">
           {t("nav.cta")}
         </Link>
 
         {/* Mobile menu button */}
-        <button
-          onClick={() => setMobileOpen((v) => !v)}
-          aria-label={t("nav.menuToggle")}
-          className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface)] transition-colors duration-200"
-        >
+        <button onClick={() => setMobileOpen((v) => !v)} aria-label={t("nav.menuToggle")} className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface)] transition-colors duration-200">
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
-
       {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="md:hidden overflow-hidden bg-[var(--surface)]/95 backdrop-blur-xl border-b border-[var(--border)]"
-          >
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.25, ease: "easeInOut" }} className="md:hidden overflow-hidden bg-[var(--surface)]/95 backdrop-blur-xl border-b border-[var(--border)]">
             <ul className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
               {navLinks.map((link) => {
                 const isActive =
@@ -145,19 +120,14 @@ export default function Navbar() {
                         isActive
                           ? "block px-4 py-3 text-sm font-medium rounded-lg text-[var(--primary)] bg-[var(--primary)]/10"
                           : "block px-4 py-3 text-sm font-medium rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--background)]"
-                      }
-                    >
+                      }>
                       {getNavLabel(link.label, t)}
                     </Link>
                   </li>
                 );
               })}
               <li className="pt-2">
-                <Link
-                  href="/contact"
-                  onClick={() => setMobileOpen(false)}
-                  className="block px-4 py-3 text-sm font-semibold rounded-xl bg-[var(--primary)] text-white text-center"
-                >
+                <Link href="/contact" onClick={() => setMobileOpen(false)} className="block px-4 py-3 text-sm font-semibold rounded-xl bg-[var(--primary)] text-white text-center">
                   {t("nav.cta")}
                 </Link>
               </li>
