@@ -365,7 +365,7 @@ export default function HomePage() {
 
                 <div className="relative h-64 overflow-hidden">
 
-                  <img src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/assets/8d5363ce-5b7c-4bc3-b251-46bd5196c442/71a885ace9c84c20b2a826a48a05bf3e.png?v=1784297250732" alt={featuredProjects[0]?.title ?? "Project"} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/assets/8d5363ce-5b7c-4bc3-b251-46bd5196c442/cb3adc66a7ce4e01b468837f42f5f575.png?v=1784297269517" alt={featuredProjects[0]?.title ?? "Project"} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[var(--surface)] via-transparent to-transparent" />
 
