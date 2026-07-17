@@ -232,7 +232,7 @@ export default function AboutPage() {
                 transition={{ delay: 0.8, duration: 0.5 }}
                 className="absolute -bottom-5 -left-5 bg-[var(--surface)] border border-[var(--border)] rounded-2xl px-4 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] flex items-center gap-3"
               >
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.7)]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-pink-400 shadow-[0_0_8px_rgba(52,211,153,0.7)]" />
                 <span className="text-sm font-medium text-[var(--foreground)]">
                   {t("about.badge")}
                 </span>

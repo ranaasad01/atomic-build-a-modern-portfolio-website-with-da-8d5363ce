@@ -164,9 +164,9 @@ function ContactForm() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.1 }}
-          className="w-20 h-20 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center mb-6"
+          className="w-20 h-20 rounded-full bg-pink-500/10 border border-pink-500/30 flex items-center justify-center mb-6"
         >
-          <CheckCircle size={36} className="text-emerald-400" />
+          <CheckCircle size={36} className="text-pink-400" />
         </motion.div>
         <h3 className="text-2xl font-bold text-[var(--foreground)] mb-3">
           {t("contact.form.success.title")}
@@ -356,9 +356,9 @@ function ContactInfoBlock() {
   const t = useTranslations();
   return (
     <div className="flex flex-col gap-8 h-full">
-      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 w-fit">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-        <span className="text-xs font-semibold text-emerald-400 tracking-wide">
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/25 w-fit">
+        <span className="w-2 h-2 rounded-full bg-pink-400 animate-pulse" />
+        <span className="text-xs font-semibold text-pink-400 tracking-wide">
           {t("contact.info.availability")}
         </span>
       </div>
