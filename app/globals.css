@@ -9,11 +9,12 @@
   --surface: #141414;
   --foreground: #F5F5F5;
   --muted: #6B7280;
-  --primary: #A855F7;
-  --accent: #6366F1;
+  --primary: #10b981;
+  --accent: #d946ef;
   --border: #1F1F1F;
   --glow-primary: rgba(168, 85, 247, 0.15);
   --glow-accent: rgba(99, 102, 241, 0.15);
+    --ring: #10b981;
 }
 
 * {
