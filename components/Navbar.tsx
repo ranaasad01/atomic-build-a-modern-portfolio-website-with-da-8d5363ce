@@ -15,8 +15,9 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   Contact: "nav.contact",
 };
 
-function getNavKey(label: string): string {
-  return NAV_LABEL_KEYS[label] || "nav.home";
+function getNavLabel(label: string, t: (key: string) => string): string {
+  const key = NAV_LABEL_KEYS[label];
+  return key ? t(key) : label;
 }
 
 export default function Navbar() {
@@ -93,7 +94,9 @@ export default function Navbar() {
                       transition={{ type: "spring", bounce: 0.2, duration: 0.4 }}
                     />
                   )}
-                  <span className="relative z-10">{t(getNavKey(link.label))}</span>
+                  <span className="relative z-10">
+                    {getNavLabel(link.label, t)}
+                  </span>
                 </Link>
               </li>
             );
@@ -102,30 +105,32 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold rounded-lg bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all duration-200 shadow-[0_0_20px_rgba(168,85,247,0.3)] hover:shadow-[0_0_30px_rgba(168,85,247,0.5)]"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-[var(--primary)] text-white text-sm font-semibold hover:bg-[var(--primary)]/90 transition-colors duration-200 shadow-[0_0_16px_rgba(168,85,247,0.3)]"
         >
           {t("nav.cta")}
         </Link>
 
+        {/* Mobile menu button */}
         <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-[var(--muted)] hover:text-[var(--foreground)] transition-colors"
+          onClick={() => setMobileOpen((v) => !v)}
           aria-label={t("nav.menuToggle")}
+          className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--surface)] transition-colors duration-200"
         >
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
 
+      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="md:hidden bg-[var(--surface)]/95 backdrop-blur-xl border-b border-[var(--border)] overflow-hidden"
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="md:hidden overflow-hidden bg-[var(--surface)]/95 backdrop-blur-xl border-b border-[var(--border)]"
           >
-            <ul className="px-6 py-4 flex flex-col gap-1">
+            <ul className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
               {navLinks.map((link) => {
                 const isActive =
                   link.href === "/"
@@ -138,11 +143,11 @@ export default function Navbar() {
                       onClick={(e) => handleLinkClick(e, link.href, link.type)}
                       className={
                         isActive
-                          ? "block px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200 text-[var(--primary)] bg-[var(--primary)]/10"
-                          : "block px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200 text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-white/5"
+                          ? "block px-4 py-3 text-sm font-medium rounded-lg text-[var(--primary)] bg-[var(--primary)]/10"
+                          : "block px-4 py-3 text-sm font-medium rounded-lg text-[var(--muted)] hover:text-[var(--foreground)] hover:bg-[var(--background)]"
                       }
                     >
-                      {t(getNavKey(link.label))}
+                      {getNavLabel(link.label, t)}
                     </Link>
                   </li>
                 );
@@ -151,7 +156,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setMobileOpen(false)}
-                  className="block px-4 py-3 text-sm font-semibold rounded-lg bg-[var(--primary)] text-white text-center"
+                  className="block px-4 py-3 text-sm font-semibold rounded-xl bg-[var(--primary)] text-white text-center"
                 >
                   {t("nav.cta")}
                 </Link>

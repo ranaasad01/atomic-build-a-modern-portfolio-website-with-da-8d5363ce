@@ -5,6 +5,11 @@
     "about": "Acerca de",
     "projects": "Proyectos",
     "contact": "Contacto",
+    "blog": "Blog",
+    "caseStudy": "Caso de Estudio",
+    "uses": "Herramientas",
+    "testimonials": "Testimonios",
+    "resume": "CV",
     "cta": "Hablemos",
     "menuToggle": "Alternar menú de navegación"
   },
@@ -16,7 +21,7 @@
     },
     "contact": {
       "title": "Ponte en Contacto",
-      "available": "Abierto a proyectos freelance y roles a tiempo completo.",
+      "available": "Abierto a proyectos freelance y posiciones a tiempo completo.",
       "cta": "Inicia una conversación"
     },
     "social": {
@@ -27,7 +32,7 @@
     },
     "copyright": "© 2024 Alex Rivera. Todos los derechos reservados.",
     "builtWith": "Construido con Next.js 14, TypeScript y Tailwind CSS.",
-    "scrollTop": "Desplazarse al inicio"
+    "scrollTop": "Desplazarse hacia arriba"
   },
   "hero": {
     "eyebrow": "Disponible para trabajar",
@@ -51,20 +56,20 @@
     "scroll": "Desplázate para explorar"
   },
   "featuredProjects": {
-    "eyebrow": "Trabajo Seleccionado",
+    "eyebrow": "Trabajos Seleccionados",
     "heading": "Proyectos de los que Estoy Orgulloso",
-    "body": "Una selección de proyectos que abarcan diseño de productos, aplicaciones web y experimentos creativos.",
+    "body": "Una selección curada de proyectos que abarcan diseño de productos, aplicaciones web y experimentos creativos.",
     "viewAll": "Ver todos los proyectos",
     "liveLink": "Sitio en vivo",
     "repoLink": "Código fuente"
   },
   "skills": {
     "eyebrow": "Experiencia",
-    "heading": "Lo que aporto",
-    "body": "Un conjunto de herramientas integral desarrollado durante 6+ años creando productos reales — desde sistemas de diseño hasta APIs distribuidas.",
+    "heading": "Lo Que Aporto",
+    "body": "Un conjunto de herramientas integral construido durante 6+ años entregando productos reales — desde sistemas de diseño hasta APIs distribuidas.",
     "yearsLabel": "Años de experiencia",
     "yearsValue": "6+",
-    "projectsLabel": "Proyectos completados",
+    "projectsLabel": "Proyectos entregados",
     "projectsValue": "40+",
     "clientsLabel": "Clientes satisfechos",
     "clientsValue": "25+"
@@ -72,7 +77,7 @@
   "ctaBanner": {
     "eyebrow": "Abierto a oportunidades",
     "heading": "¿Tienes un proyecto en mente?",
-    "body": "Estoy disponible para proyectos freelance y oportunidades a tiempo completo. Hablemos sobre lo que podemos construir juntos.",
+    "body": "Actualmente estoy abierto a proyectos freelance y oportunidades a tiempo completo. Hablemos sobre lo que podemos construir juntos.",
     "cta": "Ponte en contacto"
   },
   "about": {
@@ -80,16 +85,17 @@
     "heading": "Hola, soy Alex.",
     "subheading": "Desarrollador. Diseñador. Eterno experimentador.",
     "body": "Vivo en la intersección entre código y diseño — donde la precisión técnica se encuentra con la narrativa visual.",
-    "storyHeading": "Mi historia",
-    "story1": "Comencé a programar a los 16 años, creando sitios de fans torpes que nadie visitaba — y nunca realmente paré. Durante los últimos seis años he trabajado con startups en etapa temprana, agencias de diseño boutique y equipos de productos de Fortune 500, entregando desde MVPs de cero a uno hasta rediseños de plataformas a gran escala.",
+    "storyHeading": "Mi Historia",
+    "story1": "Comencé a escribir código a los 16 años, construyendo sitios de fans torpes que nadie visitaba — y nunca realmente paré. Durante los últimos seis años he trabajado con startups en etapa temprana, agencias de diseño boutique y equipos de productos de Fortune 500, entregando todo desde MVPs de cero a uno hasta rediseños de plataformas a gran escala.",
     "story2": "Creo que los grandes productos digitales nacen cuando el rigor de la ingeniería y la empatía del diseño comparten el mismo lugar en la mesa. Esa es la filosofía que aporto a cada proyecto — ya sea que esté arquitectando un pipeline de datos u obsesionándome con una inconsistencia de espaciado de 4 px en una librería de componentes.",
     "story3": "Cuando no estoy frente a una pantalla, me encontrarás caminando senderos de montaña, fotografiando en película, o sumergido en un agujero de conejo sobre arte generativo y creative coding.",
-    "skillsHeading": "Habilidades y tecnologías",
+    "skillsHeading": "Habilidades y Tecnologías",
     "skillsBody": "Las herramientas que uso todos los días — y las que saco cuando el problema lo requiere.",
     "socialHeading": "Encuéntrame en línea",
-    "socialBody": "Ya sea que quieras ver mi código, leer mis pensamientos, o simplemente saludar — aquí es donde estoy.",
-    "resumeCta": "Descargar currículum",
-    "imageAlt": "Alex Rivera — Desarrollador Full-Stack y Diseñador UI/UX",
+    "timelineHeading": "Experiencia y Educación",
+    "downloadCV": "Descargar CV",
+    "availableHeading": "Actualmente disponible",
+    "availableBody": "Abierto a roles senior de full-stack y design-engineering. Remote-first, abierto a híbrido en el Área de la Bahía de SF.",
     "badge": "Sobre mí",
     "connect": {
       "eyebrow": "Trabajemos juntos",
@@ -98,146 +104,125 @@
     },
     "cta": {
       "contact": "Ponte en contacto",
-      "resume": "Descargar currículum"
+      "resume": "Descargar CV"
     },
-    "intro": "Soy diseñador y desarrollador apasionado por crear experiencias digitales reflexivas. Con enfoque en diseño limpio y código funcional, ayudo a marcas a contar su historia a través de la web.",
-    "pullquote": "Creo experiencias digitales que equilibran estética con funcionalidad, transformando ideas complejas en interfaces intuitivas.",
+    "intro": "Soy diseñador y desarrollador full-stack enfocado en crear experiencias digitales reflexivas. Con experiencia en diseño e ingeniería, cierro la brecha entre estética y funcionalidad.",
+    "pullquote": {
+      "attribution": "Alex"
+    },
     "skills": {
-      "eyebrow": "Lo que hago",
+      "eyebrow": "Qué hago",
       "heading": "Habilidades y experiencia",
-      "subheading": "Una mezcla de pensamiento de diseño y ejecución técnica en tecnologías web modernas."
+      "subheading": "Una combinación de pensamiento de diseño e implementación técnica en toda la pila."
     },
     "timeline": {
-      "eyebrow": "Mi trayectoria",
-      "heading": "Experiencia",
-      "subheading": "Años de crecimiento, aprendizaje y lanzamiento de productos que importan."
+      "eyebrow": "Experiencia",
+      "heading": "Línea de tiempo profesional",
+      "subheading": "Una década lanzando productos que importan."
     }
   },
   "projects": {
     "eyebrow": "Portafolio",
-    "heading": "Todos los Proyectos",
-    "body": "Seis años de trabajo destilados en los proyectos que más me desafiaron, más me enseñaron y, honestamente, se ven mejor.",
-    "filterAll": "Todos",
-    "filterWebApp": "Aplicación Web",
-    "filterUiUx": "Diseño UI/UX",
-    "filterOpenSource": "Código Abierto",
-    "filterExperiment": "Experimento",
-    "liveLink": "Sitio en vivo",
-    "repoLink": "Código fuente",
-    "ctaHeading": "¿Interesado en trabajar juntos?",
-    "ctaBody": "Tomo un número limitado de proyectos freelance cada trimestre para mantener la calidad alta. Si tu cronograma funciona, hablemos.",
-    "ctaButton": "Inicia una conversación",
-    "imageAlt": "Captura de pantalla del proyecto",
+    "heading": "Todos los proyectos",
+    "body": "Cada proyecto es un problema resuelto, una habilidad afilada y una historia que vale la pena contar.",
+    "featured": "Destacado",
+    "liveLink": "En vivo",
+    "repoLink": "Código",
+    "noResults": "Ningún proyecto coincide con este filtro.",
+    "ctaHeading": "¿Tienes un proyecto en mente?",
+    "ctaBody": "Siempre estoy abierto a discutir nuevas oportunidades y desafíos interesantes.",
+    "ctaButton": "Hablemos",
     "card": {
-      "live": "Demo en Vivo",
-      "repo": "Ver Código"
+      "live": "Sitio en vivo",
+      "repo": "Ver código"
     },
-    "count": "{count} Proyectos",
+    "count": "proyectos",
     "cta": {
-      "body": "¿Tienes una idea? Construyamos algo genial juntos.",
-      "button": "Iniciar un Proyecto",
-      "email": "hello@example.com",
-      "eyebrow": "¿Listo para colaborar?",
-      "heading": "Trabajemos Juntos"
+      "body": "¿Interesado en trabajar juntos? Hablemos sobre tu próximo proyecto.",
+      "button": "Iniciar un proyecto",
+      "email": "hello@alex.dev",
+      "eyebrow": "Trabajo destacado",
+      "heading": "Mira lo que he construido"
     },
     "empty": "Sin proyectos aún. Vuelve pronto.",
-    "featured": "Trabajo Destacado",
-    "subheading": "Una selección de proyectos recientes que muestran diseño y desarrollo.",
-    "viewAll": "Ver Todos los Proyectos"
+    "subheading": "Una selección de proyectos recientes que abarcan diseño, desarrollo y estrategia.",
+    "viewAll": "Ver todos los proyectos"
   },
   "contact": {
     "eyebrow": "Ponte en contacto",
-    "heading": "Construyamos Algo.",
-    "body": "Ya sea una idea de producto, una colaboración o simplemente una pregunta — mi bandeja de entrada está abierta. Normalmente respondo en 24 horas.",
-    "formHeading": "Envía un Mensaje",
-    "formBody": "Completa los detalles a continuación y te responderé lo antes posible.",
-    "formNote": "Leo cada mensaje personalmente. Sin bots, sin respuestas automáticas — solo una respuesta real de mi parte.",
-    "namePlaceholder": "Tu nombre",
-    "nameLabel": "Nombre",
-    "emailPlaceholder": "tu@email.com",
-    "emailLabel": "Correo Electrónico",
-    "subjectLabel": "Asunto",
-    "subjectPlaceholder": "p. ej. Consulta de Freelance, Colaboración, Solo Saludar",
-    "messagePlaceholder": "Cuéntame sobre tu proyecto o idea...",
-    "messageLabel": "Mensaje",
-    "submitButton": "Enviar mensaje",
-    "sending": "Enviando...",
-    "successHeading": "¡Mensaje enviado!",
-    "successBody": "Gracias por comunicarte. Te responderé dentro de 24 horas.",
-    "errorMessage": "Algo salió mal. Por favor, intenta de nuevo o envíame un correo directamente.",
-    "directHeading": "O Contáctame Directamente",
-    "directBody": "¿Prefieres otro canal? Aquí es donde puedes encontrarme.",
-    "availabilityLabel": "Disponibilidad",
-    "availabilityValue": "Abierto a nuevos proyectos",
-    "locationLabel": "Ubicación",
-    "locationValue": "San Francisco, CA",
-    "responseLabel": "Tiempo de respuesta",
-    "responseValue": "Dentro de 24 horas",
-    "emailLabel2": "Correo electrónico",
-    "imageAlt": "Contactar a Alex Rivera",
-    "footer": {
-      "note": "© 2024. Diseñado y creado con cuidado.",
-      "privacy": "Política de privacidad"
-    },
+    "heading": "Construyamos algo increíble",
+    "body": "¿Tienes un proyecto en mente, un puesto que llenar o solo quieres saludar? Mi bandeja de entrada siempre está abierta.",
     "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
       "email": {
         "label": "Correo electrónico",
         "placeholder": "tu@ejemplo.com"
       },
-      "error": {
-        "body": "Algo salió mal. Por favor, intenta de nuevo o comunícate directamente.",
-        "retry": "Intentar de nuevo"
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "¿De qué se trata?"
       },
-      "heading": "Hablemos",
+      "subjectPlaceholder": "¿De qué se trata?",
       "message": {
         "chars": "caracteres",
         "label": "Mensaje",
         "placeholder": "Cuéntame sobre tu proyecto..."
       },
-      "name": {
-        "label": "Nombre",
-        "placeholder": "Tu nombre"
-      },
-      "subheading": "Completa el formulario a continuación y te responderé dentro de 24 horas.",
-      "subject": {
-        "label": "Asunto",
-        "placeholder": "¿De qué se trata?"
-      },
+      "messagePlaceholder": "Cuéntame sobre tu proyecto, cronograma y presupuesto…",
       "submit": {
         "label": "Enviar mensaje",
         "sending": "Enviando..."
       },
+      "submitting": "Enviando…",
+      "successHeading": "¡Mensaje enviado!",
+      "successBody": "Gracias por comunicarte. Te responderé dentro de 24 horas.",
+      "errorHeading": "Algo salió mal",
+      "errorBody": "Por favor, intenta de nuevo o envíame un correo directamente.",
+      "sendAnother": "Enviar otro mensaje",
+      "error": {
+        "body": "Algo salió mal. Por favor, intenta de nuevo.",
+        "retry": "Intentar de nuevo"
+      },
+      "heading": "Ponte en contacto",
+      "subheading": "¿Tienes una pregunta o proyecto en mente? Me encantaría saber de ti.",
       "success": {
-        "body": "Gracias por comunicarte. Revisaré tu mensaje y responderé pronto.",
+        "body": "Gracias por comunicarte. Te responderé pronto.",
         "cta": "Volver al inicio",
         "title": "Mensaje enviado"
       }
     },
+    "footer": {
+      "note": "Generalmente respondo dentro de 24 horas.",
+      "privacy": "Política de privacidad"
+    },
     "info": {
-      "availability": "Disponible para roles de freelance y tiempo completo",
-      "body": "¿Tienes una pregunta o quieres trabajar juntos? Me encantaría saber de ti.",
-      "heading": "Ponte en contacto",
+      "availability": "Disponible para trabajos freelance y tiempo completo",
+      "body": "¿Prefieres correo electrónico? También puedes contactarme directamente en hello@alex.dev o conectar en redes sociales.",
+      "heading": "Información de contacto",
       "social": {
-        "title": "Conecta"
+        "title": "Sígueme"
       }
     },
-    "subheading": "¿Preguntas? Conectemos."
+    "subheading": "Creemos algo increíble juntos."
   },
   "cta": {
-    "badge": "Próximos pasos",
-    "button": "Iniciar un proyecto",
-    "description": "Ya sea que tengas un proyecto específico en mente o simplemente quieras explorar posibilidades, estoy aquí para ayudarte a hacer realidad tu visión.",
-    "heading": "¿Listo para crear algo increíble?"
+    "badge": "Trabajo destacado",
+    "button": "Ver caso de estudio",
+    "description": "Un rediseño completo de una plataforma SaaS que aumentó el engagement de usuarios en un 40% y redujo la cancelación.",
+    "heading": "Último proyecto"
   },
   "testimonials": {
-    "eyebrow": "Lo que otros dicen",
-    "heading": "Confiado por clientes",
-    "subheading": "Comentarios reales de personas con las que he trabajado."
+    "eyebrow": "Prueba social",
+    "heading": "Lo que otros dicen",
+    "subheading": "Palabras amables de clientes, colaboradores y colegas con los que he trabajado."
   },
   "values": {
-    "eyebrow": "Cómo trabajo",
-    "heading": "Mi enfoque",
-    "skillsLabel": "Habilidades principales",
-    "subheading": "Enfocado en código limpio, diseño reflexivo y entrega de resultados."
+    "eyebrow": "Sobre mí",
+    "heading": "Artesanía, curiosidad y código",
+    "skillsLabel": "Habilidades y herramientas",
+    "subheading": "Diseño y construyo productos digitales con atención al detalle y enfoque en la experiencia del usuario."
   }
 }

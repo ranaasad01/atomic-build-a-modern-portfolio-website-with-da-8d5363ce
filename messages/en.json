@@ -5,6 +5,11 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
+    "blog": "Blog",
+    "caseStudy": "Case Study",
+    "uses": "Uses",
+    "testimonials": "Testimonials",
+    "resume": "Resume",
     "cta": "Let's Talk",
     "menuToggle": "Toggle navigation menu"
   },
@@ -86,10 +91,11 @@
     "story3": "When I'm not in front of a screen, you'll find me hiking mountain trails, shooting film photography, or deep in a rabbit hole about generative art and creative coding.",
     "skillsHeading": "Skills & Technologies",
     "skillsBody": "The tools I reach for every day — and the ones I pull out when the problem demands it.",
-    "socialHeading": "Find Me Online",
-    "socialBody": "Whether you want to see my code, read my thoughts, or just say hello — here's where I hang out.",
-    "resumeCta": "Download résumé",
-    "imageAlt": "Alex Rivera — Full-Stack Developer & UI/UX Designer",
+    "socialHeading": "Find me online",
+    "timelineHeading": "Experience & Education",
+    "downloadCV": "Download CV",
+    "availableHeading": "Currently available",
+    "availableBody": "Open to senior full-stack and design-engineering roles. Remote-first, open to hybrid in SF Bay Area.",
     "badge": "About me",
     "connect": {
       "eyebrow": "Let's work together",
@@ -100,144 +106,123 @@
       "contact": "Get in touch",
       "resume": "Download resume"
     },
-    "intro": "I'm a designer and developer passionate about creating thoughtful digital experiences. With a focus on clean design and functional code, I help brands tell their story through the web.",
-    "pullquote": "I craft digital experiences that balance aesthetics with functionality, turning complex ideas into intuitive interfaces.",
+    "intro": "I'm a full-stack designer and developer focused on building thoughtful digital experiences. With a background in both design and engineering, I bridge the gap between aesthetics and functionality.",
+    "pullquote": {
+      "attribution": "Alex"
+    },
     "skills": {
       "eyebrow": "What I do",
       "heading": "Skills & expertise",
-      "subheading": "A blend of design thinking and technical execution across modern web technologies."
+      "subheading": "A blend of design thinking and technical implementation across the full stack."
     },
     "timeline": {
-      "eyebrow": "My journey",
-      "heading": "Experience",
-      "subheading": "Years of growth, learning, and shipping products that matter."
+      "eyebrow": "Experience",
+      "heading": "Career timeline",
+      "subheading": "A decade of shipping products that matter."
     }
   },
   "projects": {
     "eyebrow": "Portfolio",
     "heading": "All Projects",
-    "body": "Six years of work distilled into the pieces that challenged me most, taught me the most, and — honestly — look the best.",
-    "filterAll": "All",
-    "filterWebApp": "Web App",
-    "filterUiUx": "UI/UX Design",
-    "filterOpenSource": "Open Source",
-    "filterExperiment": "Experiment",
-    "liveLink": "Live site",
-    "repoLink": "Source code",
-    "ctaHeading": "Interested in working together?",
-    "ctaBody": "I take on a limited number of freelance projects each quarter to keep quality high. If your timeline works, let's talk.",
-    "ctaButton": "Start a conversation",
-    "imageAlt": "Project screenshot",
+    "body": "Every project is a problem solved, a skill sharpened, and a story worth telling.",
+    "featured": "Featured",
+    "liveLink": "Live",
+    "repoLink": "Code",
+    "noResults": "No projects match this filter.",
+    "ctaHeading": "Got a project in mind?",
+    "ctaBody": "I'm always open to discussing new opportunities and interesting challenges.",
+    "ctaButton": "Let's talk",
     "card": {
-      "live": "Live Demo",
-      "repo": "View Code"
+      "live": "Live site",
+      "repo": "View code"
     },
-    "count": "{count} Projects",
+    "count": "projects",
     "cta": {
-      "body": "Got an idea? Let's build something great together.",
-      "button": "Start a Project",
-      "email": "hello@example.com",
-      "eyebrow": "Ready to collaborate?",
-      "heading": "Let's Work Together"
+      "body": "Interested in working together? Let's talk about your next project.",
+      "button": "Start a project",
+      "email": "hello@alex.dev",
+      "eyebrow": "Featured Work",
+      "heading": "See what I've built"
     },
     "empty": "No projects yet. Check back soon.",
-    "featured": "Featured Work",
-    "subheading": "A selection of recent projects showcasing design and development.",
-    "viewAll": "View All Projects"
+    "subheading": "A selection of recent projects spanning design, development, and strategy.",
+    "viewAll": "View all projects"
   },
   "contact": {
     "eyebrow": "Get in touch",
-    "heading": "Let's Build Something.",
-    "body": "Whether it's a product idea, a collaboration, or just a question — my inbox is open. I typically reply within 24 hours.",
-    "formHeading": "Send a Message",
-    "formBody": "Fill in the details below and I'll get back to you as soon as possible.",
-    "formNote": "I read every message personally. No bots, no auto-responders — just a real reply from me.",
-    "namePlaceholder": "Your name",
-    "nameLabel": "Name",
-    "emailPlaceholder": "your@email.com",
-    "emailLabel": "Email",
-    "subjectLabel": "Subject",
-    "subjectPlaceholder": "e.g. Freelance Inquiry, Collaboration, Just Saying Hi",
-    "messagePlaceholder": "Tell me about your project or idea...",
-    "messageLabel": "Message",
-    "submitButton": "Send message",
-    "sending": "Sending...",
-    "successHeading": "Message sent!",
-    "successBody": "Thanks for reaching out. I'll get back to you within 24 hours.",
-    "errorMessage": "Something went wrong. Please try again or email me directly.",
-    "directHeading": "Or Reach Me Directly",
-    "directBody": "Prefer a different channel? Here's where you can find me.",
-    "availabilityLabel": "Availability",
-    "availabilityValue": "Open to new projects",
-    "locationLabel": "Location",
-    "locationValue": "San Francisco, CA",
-    "responseLabel": "Response time",
-    "responseValue": "Within 24 hours",
-    "emailLabel2": "Email",
-    "imageAlt": "Contact Alex Rivera",
-    "footer": {
-      "note": "© 2024. Designed and built with care.",
-      "privacy": "Privacy policy"
-    },
+    "heading": "Let's Build Something Great",
+    "body": "Have a project in mind, a role to fill, or just want to say hello? My inbox is always open.",
     "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
       "email": {
         "label": "Email",
         "placeholder": "you@example.com"
       },
-      "error": {
-        "body": "Something went wrong. Please try again or reach out directly.",
-        "retry": "Try again"
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What's this about?"
       },
-      "heading": "Let's talk",
+      "subjectPlaceholder": "What's this about?",
       "message": {
         "chars": "characters",
         "label": "Message",
         "placeholder": "Tell me about your project..."
       },
-      "name": {
-        "label": "Name",
-        "placeholder": "Your name"
-      },
-      "subheading": "Fill out the form below and I'll get back to you within 24 hours.",
-      "subject": {
-        "label": "Subject",
-        "placeholder": "What's this about?"
-      },
+      "messagePlaceholder": "Tell me about your project, timeline, and budget…",
       "submit": {
         "label": "Send message",
         "sending": "Sending..."
       },
+      "submitting": "Sending…",
+      "successHeading": "Message sent!",
+      "successBody": "Thanks for reaching out. I'll get back to you within 24 hours.",
+      "errorHeading": "Something went wrong",
+      "errorBody": "Please try again or email me directly.",
+      "sendAnother": "Send another message",
+      "error": {
+        "body": "Something went wrong. Please try again.",
+        "retry": "Try again"
+      },
+      "heading": "Get in touch",
+      "subheading": "Have a question or project in mind? I'd love to hear from you.",
       "success": {
-        "body": "Thanks for reaching out. I'll review your message and respond soon.",
-        "cta": "Back to home",
+        "body": "Thanks for reaching out. I'll get back to you soon.",
+        "cta": "Back home",
         "title": "Message sent"
       }
     },
+    "footer": {
+      "note": "I typically respond within 24 hours.",
+      "privacy": "Privacy policy"
+    },
     "info": {
       "availability": "Available for freelance & full-time roles",
-      "body": "Have a question or want to work together? I'd love to hear from you.",
-      "heading": "Get in touch",
+      "body": "Prefer email? You can also reach me directly at hello@alex.dev or connect on social.",
+      "heading": "Contact info",
       "social": {
-        "title": "Connect"
+        "title": "Follow along"
       }
     },
-    "subheading": "Questions? Let's connect."
+    "subheading": "Let's create something great together."
   },
   "cta": {
-    "badge": "Next steps",
-    "button": "Start a project",
-    "description": "Whether you have a specific project in mind or just want to explore possibilities, I'm here to help bring your vision to life.",
-    "heading": "Ready to create something great?"
+    "badge": "Featured work",
+    "button": "View case study",
+    "description": "A complete redesign of a SaaS platform that increased user engagement by 40% and reduced churn.",
+    "heading": "Latest project"
   },
   "testimonials": {
-    "eyebrow": "What others say",
-    "heading": "Trusted by Clients",
-    "subheading": "Real feedback from people I've worked with."
+    "eyebrow": "Social Proof",
+    "heading": "What others say",
+    "subheading": "Kind words from clients, collaborators, and colleagues I've worked with."
   },
   "values": {
-    "eyebrow": "How I work",
-    "heading": "My Approach",
-    "skillsLabel": "Core Skills",
-    "subheading": "Focused on clean code, thoughtful design, and delivering results."
+    "eyebrow": "About Me",
+    "heading": "Craft, curiosity, and code",
+    "skillsLabel": "Skills & Tools",
+    "subheading": "I design and build digital products with attention to detail and a focus on user experience."
   }
 }

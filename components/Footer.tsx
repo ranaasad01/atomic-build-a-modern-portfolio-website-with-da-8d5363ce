@@ -14,8 +14,9 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   Contact: "nav.contact",
 };
 
-function getNavKey(label: string): string {
-  return NAV_LABEL_KEYS[label] || "nav.home";
+function getNavLabel(label: string, t: (key: string) => string): string {
+  const key = NAV_LABEL_KEYS[label];
+  return key ? t(key) : label;
 }
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -98,9 +99,9 @@ export default function Footer() {
                   <Link
                     href={getLinkHref(link.href, link.type)}
                     onClick={(e) => handleLinkClick(e, link.href, link.type)}
-                    className="text-[var(--muted)] hover:text-[var(--foreground)] text-sm transition-colors duration-200"
+                    className="text-[var(--muted)] text-sm hover:text-[var(--foreground)] transition-colors duration-200"
                   >
-                    {t(getNavKey(link.label))}
+                    {getNavLabel(link.label, t)}
                   </Link>
                 </li>
               ))}
@@ -111,37 +112,31 @@ export default function Footer() {
             <p className="text-[var(--foreground)] font-semibold text-sm mb-4 uppercase tracking-widest">
               {t("footer.contact.title")}
             </p>
-            <p className="text-[var(--muted)] text-sm mb-2">{t("footer.contact.available")}</p>
-            <a
-              href={"mailto:" + BRAND_EMAIL}
-              className="text-[var(--primary)] text-sm hover:text-[var(--primary)]/80 transition-colors duration-200 block mb-4"
-            >
-              {BRAND_EMAIL}
-            </a>
+            <p className="text-[var(--muted)] text-sm leading-relaxed mb-4">
+              {t("footer.contact.available")}
+            </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 transition-all duration-200 shadow-[0_0_20px_rgba(168,85,247,0.2)]"
+              className="inline-flex items-center gap-2 text-[var(--primary)] text-sm font-medium hover:underline transition-colors duration-200"
             >
               {t("footer.contact.cta")}
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between pt-8 border-t border-[var(--border)] gap-4">
-          <p className="text-[var(--muted)] text-xs">
-            {t("footer.copyright")}
-          </p>
-          <p className="text-[var(--muted)] text-xs">
-            {t("footer.builtWith")}
-          </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-[var(--border)]">
+          <div className="text-center sm:text-left">
+            <p className="text-[var(--muted)] text-xs">{t("footer.copyright")}</p>
+            <p className="text-[var(--muted)] text-xs mt-0.5">{t("footer.builtWith")}</p>
+          </div>
           <motion.button
             onClick={scrollToTop}
+            aria-label={t("footer.scrollTop")}
             whileHover={{ scale: 1.1, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            aria-label={t("footer.scrollTop")}
-            className="w-8 h-8 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--primary)] hover:border-[var(--primary)]/30 transition-colors duration-200"
+            className="w-9 h-9 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--primary)] hover:border-[var(--primary)]/30 transition-colors duration-200"
           >
-            <ArrowUp size={14} />
+            <ArrowUp size={16} />
           </motion.button>
         </div>
       </div>
